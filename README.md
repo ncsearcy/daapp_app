@@ -29,9 +29,11 @@ NextAuth.js
 Tailwind CSS
 Drizzle ORM
 PostgreSQL
-Contributing
-Contributions are welcome! If you find any issues or have suggestions for improvement, please open an issue or submit a pull request.
 ```
+
+### Contributing
+
+Contributions are welcome! If you find any issues or have suggestions for improvement, please open an issue or submit a pull request.
 
 ### License
 
