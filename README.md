@@ -2,7 +2,7 @@
 
 Welcome to the DAAPP (Daily Activity and Project App) project! This is a Next.js application that allows users to manage their daily activities and projects.
 
-Key Features
+Key Features:
 
 ```User authentication using NextAuth.js and Google OAuth
 Create, update, and delete projects
