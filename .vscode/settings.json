@@ -1,5 +1,5 @@
 {
-  "cSpell.words": ["clsx", "DAAPP", "tailwindcss"],
+  "cSpell.words": ["clsx", "DAAPP", "signout", "tailwindcss"],
   "sqltools.connections": [
     {
       "previewLimit": 50,

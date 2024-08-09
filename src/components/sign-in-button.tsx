@@ -16,21 +16,13 @@ export const SignInButton = (props: {
 }) => {
   const router = useRouter();
   return (
-    <Card className={props.className}>
-      <CardHeader>
-        <CardTitle>Welcome to D.A.A.P.P.</CardTitle>
-        <CardDescription> Please sign in to continue. </CardDescription>
-      </CardHeader>
-      <CardContent>
-        <Button className="signin-button w-full hover:after"
+        <Button className="signin-button w-full font-semibold hover:after"
           variant="outline"
           style={{ cursor: "pointer" }}
           onClick={() => router.push("/auth/sign-in")}
         >
-          {props.children || "Sign In or Sign Up"}
+          {props.children || "Sign In"}
         </Button>
-      </CardContent>
-    </Card>
   );
 };
 

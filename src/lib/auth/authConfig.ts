@@ -1,7 +1,7 @@
 import NextAuth from "next-auth"
 import { DrizzleAdapter } from "@auth/drizzle-adapter";
 import Google  from "next-auth/providers/google";
-import { db } from "../../../db/schema";
+import { db } from "../../db/schema";
 
 export const { handlers, signIn, signOut, auth } = NextAuth({
     trustHost: true,
@@ -22,15 +22,15 @@ export const { handlers, signIn, signOut, auth } = NextAuth({
         }),
     ],
     callbacks: {
-        async jwt({ token, user }) {
-            if (user) {
-                return {
-                    ...token,
-                    id: user.id,
-                };
-            }
-            return token
-        },
+        // async jwt({ token, user }) {
+        //     if (user) {
+        //         return {
+        //             ...token,
+        //             id: user.id,
+        //         };
+        //     }
+        //     return token
+        // },
 async session({ session, token }) {
     console.log("session callback", { session, token });
     if (token) {
