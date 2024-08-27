@@ -4,7 +4,7 @@ import { ColumnDef } from "@tanstack/react-table";
 import { Button } from "@/components/ui/button";
 
 
-export type Activities = {
+export type Projects = {
   id: string;
   title: string;
   description: string;
@@ -13,7 +13,7 @@ export type Activities = {
   priority: ""
 };
 
-export const columns: ColumnDef<Activities>[] = [
+export const columns: ColumnDef<Projects>[] = [
   {
     accessorKey: "title",
     header: ({ column }) =>{
